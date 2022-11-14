@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Manrope:wght@800&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.bb {
+    position: relative;
+}
+
+.overlay {
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 92.5%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: #00fff78f;
+}
+
+.bb:hover .overlay {
+    opacity: 1;
+}
+
+.icon {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10; 
+}
+  
+
+.equi {
+    width: 22vw;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.equi:hover {
+    cursor: pointer;
+}
+
+.e-text {
+    color: hsl(0, 0%, 100%);
+}
+
+.e-text:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.e-para {
+    font-size: 18px;
+    margin: 20px 0;
+    color: hsl(215, 51%, 70%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.digits {
+    display: flex;
+    align-items: center;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+}
+
+.digits small {
+    color: hsl(178, 100%, 50%);
+}
+
+.days small {
+    color: hsl(215, 51%, 70%);
+}
+
+.blur {
+    color: hsl(215, 32%, 27%);
+    margin-bottom: 20px;
+}
+
+.user{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.user img{
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.user small {
+    color:  hsl(215, 51%, 70%);
+}
+
+.user small span {
+    color: hsl(0, 0%, 100%);
+}
+
+.user small span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        height: 70vh;
+    }
+
+    .equi {
+        width: 80vw;
+    }
+}
